@@ -543,10 +543,9 @@
         <div class="welcome-card" id="welcomeCard">
             <h2>Welcome to Cheating Detection</h2>
             <p>
-                Our AI will analyze your relationship concerns to detect potential cheating patterns. 
-                Based on your responses, we'll provide a percentage score and insights.
+                Our AI analyzes your relationship through <strong>12 comprehensive questions</strong> to detect potential cheating patterns and provide insights.
                 <br><br>
-                <strong>Remember:</strong> This is for entertainment purposes only and should not replace professional relationship advice.
+                <strong>For entertainment purposes only.</strong>
             </p>
             <button class="start-btn" onclick="startSession()">Start Detection</button>
         </div>
@@ -555,7 +554,7 @@
             <div class="progress-bar">
                 <div class="progress-fill" id="progressFill"></div>
             </div>
-            <div class="progress-text" id="progressText">Question 1 of 8</div>
+            <div class="progress-text" id="progressText">Question 1 of 12</div>
             
             <div class="messages" id="messages"></div>
             
@@ -575,7 +574,7 @@
     <script>
         let sessionId = null;
         let currentQuestion = 0;
-        let totalQuestions = 8;
+        let totalQuestions = 12;
         let isAnalysisComplete = false;
 
         const API_BASE = 'https://cheat-detector.up.railway.app';
