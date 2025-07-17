@@ -53,10 +53,11 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            padding: 1rem;
+            padding: 1rem 1rem 0.5rem 1rem;
             max-width: 100%;
             margin: 0 auto;
             gap: 1rem;
+            min-height: 0;
         }
 
         .welcome-card {
@@ -147,7 +148,7 @@
             border-radius: 12px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
             min-height: 400px;
-            max-height: 75vh;
+            max-height: 85vh;
             scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
             margin-bottom: 0.3rem;
@@ -435,7 +436,7 @@
         /* Mobile optimizations */
         @media (max-width: 768px) {
             .container {
-                padding: 0.8rem;
+                padding: 0.8rem 0.8rem 0.3rem 0.8rem;
                 gap: 0.8rem;
             }
             
@@ -454,12 +455,13 @@
 
             .messages {
                 min-height: 350px;
-                max-height: 55vh;
+                max-height: 82vh;
             }
 
             .input-container {
-                padding: 0.8rem;
+                padding: 0.6rem;
                 gap: 0.4rem;
+                margin-bottom: 0.2rem;
             }
 
             .verdict-score {
@@ -473,6 +475,10 @@
         }
 
         @media (max-width: 480px) {
+            .container {
+                padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+            }
+            
             .header h1 {
                 font-size: 1.2rem;
             }
@@ -488,7 +494,12 @@
 
             .messages {
                 min-height: 300px;
-                max-height: 50vh;
+                max-height: 80vh;
+            }
+
+            .input-container {
+                padding: 0.5rem;
+                margin-bottom: 0.1rem;
             }
 
             .verdict-card {
